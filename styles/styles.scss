@@ -1,6 +1,5 @@
-@import 'utilities';
-@import 'media-queries';
 @import 'navbar';
+@import 'homepage';
 
 
 *,
@@ -26,8 +25,5 @@ a{
     cursor: pointer;
 }
 
-.homepage{
-    width: 95%;
-    margin: 0 auto;
-}
+
 
