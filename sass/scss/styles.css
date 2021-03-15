@@ -1,10 +1,19 @@
-.navbar, .homepage_container {
+.navbar, .homepage_container, .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer-container .social__links, .footer-container .copyright {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: grey;
+  width: 100%;
+  text-align: center;
 }
 
 .navbar {
@@ -74,7 +83,7 @@
   font-size: 1.3rem;
 }
 
-.navbar, .homepage_container {
+.navbar, .homepage_container, .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,13 +92,22 @@
           align-items: center;
 }
 
+.footer-container .social__links, .footer-container .copyright {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: grey;
+  width: 100%;
+  text-align: center;
+}
+
 .homepage {
   max-width: 95%;
   margin: 0 auto;
 }
 
 .homepage_container {
-  background-image: url("../images/pancake-background.jpg");
+  background-image: url("/images/pancake-background.jpg");
   background-size: cover;
   height: 50rem;
   width: 100%;
@@ -102,15 +120,19 @@
 }
 
 .gallery {
-  margin-top: 5em;
+  margin: 3rem 0;
   text-align: center;
+}
+
+.gallery h1 {
+  margin-bottom: 2rem;
 }
 
 .gallery__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 4 1fr;
-      grid-template-rows: 4 1fr;
+  -ms-grid-rows: 4 2fr;
+      grid-template-rows: 4 2fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -130,6 +152,22 @@
 
 .gallery__container .product_image {
   max-width: 20em;
+}
+
+.footer-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.footer-container .social__links h2 {
+  margin: 1em 0;
+}
+
+.footer-container .social__links--image {
+  margin: 2em 2em;
 }
 
 *,

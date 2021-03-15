@@ -8,7 +8,7 @@
 
 .homepage_container{
     @extend %align-center;
-    background-image: url("../images/pancake-background.jpg");
+    background-image: url("/images/pancake-background.jpg");
     background-size: cover;
     height: 50rem;
     width:100%;
@@ -20,12 +20,15 @@
 }
 
 .gallery{
-    margin-top: 5em;
+    margin: 3rem 0;
     text-align: center;
 
+    h1{
+        margin-bottom: 2rem;
+    }
     &__container{
        display: grid;
-       grid-template-rows: 4(1fr);
+       grid-template-rows: 4(2fr);
        align-items: center;
        justify-items: center;
        margin: 0 auto; 
@@ -42,6 +45,26 @@
        }
     
     }
+}
 
+.footer-container{
+    @extend %align-center;
+    flex-direction: column;
+    color: white;
 
+    .social__links{
+        @extend %footer;
+
+        h2{
+            margin: 1em 0;
+        }
+
+        &--image{
+            margin: 2em 2em;
+        }
+    }
+
+    .copyright{
+        @extend %footer;
+    }
 }
